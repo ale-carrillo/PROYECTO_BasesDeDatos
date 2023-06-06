@@ -42,14 +42,14 @@
   .carousel{
     justify-content: center;
   }
-  header{
+  /* header{
     position: fixed;
     top: 0; 
     left: 0;
     width: 100%;
     z-index: 1;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0);
-  }
+  } */
 
   .tamcarr
   {
@@ -57,7 +57,7 @@
   }
 
   .fondo{
-    background-image: url("../statics/images/Imagenes/fon1.jpg");
+    background-image: url("../statics/images/Imagenes/fondoB.jpg");
     max-width: 100%;
     width: auto;
     background-attachment: fixed;

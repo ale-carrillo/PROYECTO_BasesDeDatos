@@ -18,19 +18,17 @@
 
 <html lang="en">
 
-  <header class="p-1 text-bg-dark">
-    <div class="container1">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-        </ul>
-        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search" action = "../">
-          <br>
-          <button> Volver
-          </button>         
-        </form>
-      </div>
+<header >
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">INICIO</a>
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <h1>DADABASE</h1>
+      </ul>
     </div>
-  </header>
+  </nav>
+</header>
+
 
 
 <body>
@@ -39,22 +37,28 @@
   <div class="fondo" >
     <div class="container" style="margin-top: 0%">
       <!-- Carrusel -->
-      <br><br><br><br>
-      <h1><div class="c1" style="color:aliceblue"><div class="type">Bienvenido a nuestro sistema <br><br> de administración de papelerias c: </div></div></h1>
+      <br>
+      <h1><div class="c1" style="color:rgb(6, 77, 139)"><div class="type">Sistema de administración de papelerias c: </div></div></h1>
       <div id = "Inicio">
         <div id="carouselExampleFade" class="carousel slide carousel-fade" >
           <div class="carousel-inner" >
         
             <div class="tamcarr">
-              <div class="carousel-item active" >
-                <a href="#sec2"><img src = "../statics/images/Imagenes/ballet.jpg" style="width:100% ;height:100%;" alt="..." ></a>
+
+              <div class="carousel-item active">
+                <a href="#sec2"><img src = "../statics/images/Imagenes/cliente.jpg" style="width:100% ;height:100%;" alt="..." ></a>
+                <div class="card-body">
+                  <h3 class="card-title" style="color:black">R E G I S T R A R  C L I E N T E</h3>
+                  <p class="card-text"><small class="text-muted">Oprime la imagen para ingresar un cliente a la base de datos</small></p>
+                </div>
               </div>
+
               <div class="carousel-item ">
-                <a href="#sec3"><img src = "../statics/images/Imagenes/nat.png"   style="width:100% ;height:100%;" alt="..."></a>
-                
-              </div>
-              <div class="carousel-item">
-                <a href="#sec4"><img src = "../statics/images/Imagenes/ciclismos.png"   style="width:100% ;height:100%;" alt="..."></a>
+                <a href="#sec3"><img src = "../statics/images/Imagenes/venta.jpg"   style="width:100% ;height:100%;" alt="..."></a>
+                <div class="card-body">
+                  <h3 class="card-title" style="color:black">R E G I S T R A R   V E N T A </h3>
+                  <p class="card-text"><small class="text-muted">Oprime la imagen para ingresar una venta a la base de datos</small></p>
+                </div>
               </div>
             </div>
     
@@ -71,7 +75,7 @@
         </div>  
       </div>
     </div>
-    <br><br><br>
+    <br><br>
       
   </div>
   <div class="fondo2" id="sec2">
@@ -80,7 +84,7 @@
       <div class="row">
         <div class="col-sm-8 col-md-6">
           <div class="giffot">
-            <img src="../statics/images/Imagenes/ballet.gif" alt="">          
+            <img src="../statics/images/Imagenes/clientex2.jpg" alt="">          
           </div>
         </div>
         <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
@@ -105,13 +109,12 @@
                 <path id="Fill" d="M16.006,16.887h0l-4.743-4.718a6.875,6.875,0,1,1,.906-.906l4.719,4.744-.88.88ZM6.887,1.262a5.625,5.625,0,1,0,5.625,5.625A5.631,5.631,0,0,0,6.887,1.262Z" transform="translate(0.003 0)"></path>
               </svg>
               <div class="bucar" >
-                ballet.io
+                registrocliente.io
               </div>
               
             <div class="letras" style="font-size:medium;">
-              El ballet es una disciplina en la que se trabaja todo el cuerpo y de forma progresiva, con la 
-              práctica regular, los músculos se fortalecen y se desarrollan cualidades como la flexibilidad, el equilibrio o la coordinación. Además de mejorar la postura y embellecer la silueta.
-          </div>
+              DATOS DEL CLIENTE
+            </div>
         </div></div></div>
       </div>
       </div>
@@ -124,7 +127,7 @@
     <div class="row">
       <div class="col-sm-8 col-md-6">
         <div class="giffot">
-          <img src="../statics/images/Imagenes/natacion.gif" alt="">     
+          <img src="../statics/images/Imagenes/ventax2.jpg" alt="">     
         </div>
       </div>
       <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
@@ -150,9 +153,11 @@
               </svg>
               
               
+              <div class="bucar" >
+                registroventa.io
+              </div>
             <div class="letras" style="font-size:medium;">
-              La natación utiliza la mayoría de los grupos musculares y es un exigente ejercicio físico que ayuda a mantener el corazón y los pulmones saludables.
-              Nadar también ayuda a mantener flexibles las articulaciones, especialmente el cuello, los hombros, y la pelvis.
+              DATOS DE LA VENTA  
             </div>
         </div>
           </div></div>
@@ -161,51 +166,7 @@
   </div>
   <br><br> <br><br> <br><br> <br><br>    
 </div>
-<div class="fondo4" id="sec4">
-  <br><br> <br><br> <br><br> 
-  <div class="container text-center" style="margin-left: 1%;">
-    <div class="row">
-      <div class="col-sm-8 col-md-6">
-        <div class="giffot">
-          <br><br><br>
-          <img src="../statics/images/Imagenes/ciclismo.gif" alt="">          
-        </div>
-      </div>
-      <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
-      <br><br><br>
-        <div class="card">
-        <div class="circles"> 
-          <div class="c"></div>
-          <div class="c"></div>
-          <div class="c"></div>
-        </div>      
-        <div class="browser">
-          <div class="chevrons">
-            <svg viewBox="0 0 20 20" height="16" width="16" xmlns="http://www.w3.org/2000/svg" data-name="20" id="_20">
-              <path transform="translate(6.25 3.75)" d="M0,6.25,6.25,0l.875.875L1.75,6.25l5.375,5.375L6.25,12.5Z" id="Fill"></path>
-            </svg>
-            <svg viewBox="0 0 20 20" height="16" width="16" xmlns="http://www.w3.org/2000/svg" data-name="20" id="_20">
-              <path transform="translate(6.625 3.75)" d="M7.125,6.25.875,12.5,0,11.625,5.375,6.25,0,.875.875,0Z" id="Fill"></path>
-            </svg>
-          </div>
-          <div class="search-bar">
-            <svg xmlns="http://www.w3.org/2000/svg" width="9.89" height="87.887" viewBox="0 0 16.89 16.887">
-              <path id="Fill" d="M16.006,16.887h0l-4.743-4.718a6.875,6.875,0,1,1,.906-.906l4.719,4.744-.88.88ZM6.887,1.262a5.625,5.625,0,1,0,5.625,5.625A5.631,5.631,0,0,0,6.887,1.262Z" transform="translate(0.003 0)"></path>
-            </svg>
-            <div class="bucar" >
-              ballet.io
-            </div>
-            
-          <div class="letras" style="font-size:medium;">
-            El ciclismo ayuda a mejorar el rendimiento, la resistencia y el aguante sin dañar los músculos de las piernas. 
-            También es un gran ejercicio cardiovascular de bajo impacto y, al añadirlo a tu régimen de entrenamiento semanal, te ayudará a hacer más con menos estrés en tu cuerpo.
-          </div>
-      </div></div></div>
-    </div>
-    </div>
-  </div>  
-  <br><br> <br><br<br><br<br><br><br<br><br<br><br> <br><br> <br>    
-</div>
+
 </div>
 </body>
 </html>
