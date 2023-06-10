@@ -7,10 +7,12 @@
   <title>DataBase</title>
   <link href="../css/bootstrap.min.css" rel="stylesheet">
   <script src="../dynamics/js/bootstrap.bundle.min.js"></script>
+  <script src="../dynamics/js/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.js"></script>
   <script src="https://kit.fontawesome.com/1d291c2799.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../css/PeliculasCT.css" />
-  <link rel="stylesheet" href="../css/CT.css" />
-  <link rel="stylesheet" href="../css/index_dcz.css" />
+  <link rel="stylesheet" href="../css/index.css" />
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Play" />
   <link rel="icon" type="image/x-icon" href="../statics/images/escudofi_negro.ico">
   
@@ -21,9 +23,8 @@
 <header >
   <nav class="navbar navbar-expand-md navbar-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html">INICIO</a>
       <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-        <h1>DADABASE</h1>
+        <h1 style="color: aliceblue;">DATABASE</h1>
       </ul>
     </div>
   </nav>
@@ -37,8 +38,8 @@
   <div class="fondo" >
     <div class="container" style="margin-top: 0%">
       <!-- Carrusel -->
-      <br>
-      <h1><div class="c1" style="color:rgb(6, 77, 139)"><div class="type">Sistema de administración de papelerias c: </div></div></h1>
+      <br><br><br>
+      <h1><div class="c1" style="color:rgb(43, 109, 167)"><div class="type">SISTEMA DE ADMINISTRACIÓN DE PAPELERIAS</div></div></h1>
       <div id = "Inicio">
         <div id="carouselExampleFade" class="carousel slide carousel-fade" >
           <div class="carousel-inner" >
@@ -89,7 +90,7 @@
         </div>
         <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
         <br><br><br>
-          <div class="card">
+          <div class="card" style="height: 1150px;">
           <div class="circles"> 
             <div class="c"></div>
             <div class="c"></div>
@@ -108,18 +109,88 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="9.89" height="87.887" viewBox="0 0 16.89 16.887">
                 <path id="Fill" d="M16.006,16.887h0l-4.743-4.718a6.875,6.875,0,1,1,.906-.906l4.719,4.744-.88.88ZM6.887,1.262a5.625,5.625,0,1,0,5.625,5.625A5.631,5.631,0,0,0,6.887,1.262Z" transform="translate(0.003 0)"></path>
               </svg>
-              <div class="bucar" >
+              <div class="buscar" >
                 registrocliente.io
               </div>
               
-            <div class="letras" style="font-size:medium;">
-              DATOS DEL CLIENTE
-            </div>
+              <div class="letras" style="font-size:medium; margin-top: 370%">
+                <h4>INGRESE CLIENTE</h4>
+                <br>
+                <form class="was-validated">
+
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="validationTooltip01" pattern="[A-Z]{2}[0-9]{6}" required>
+                    <label for="validationTooltip01 floatingInput">RFC cliente</label>
+                    <div class="invalid-feedback">
+                      Ingresa un RFC valido
+                    </div>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="validationTooltip01" maxlength="40" required>
+                    <label for="validationTooltip01 floatingInput">Nombre</label>
+                    <div class="invalid-feedback">
+                      Ingrese Nombre
+                    </div>
+                  </div>
+
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="validationTooltip01" maxlength="40" required>
+                    <label for="validationTooltip01 floatingInput">Apellido Paterno</label>
+                    <div class="invalid-feedback">
+                      Ingrese Apellido Paterno
+                    </div>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="validationTooltip01" maxlength="40">
+                    <label for="validationTooltip01 floatingInput">Apellido Materno</label>
+                    <div class="invalid-feedback">
+                      Ingrese Apellido Materno
+                    </div>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="validationTooltip01" maxlength="40" required>
+                    <label for="validationTooltip01 floatingInput">Calle</label>
+                    <div class="invalid-feedback">
+                      Ingrese Calle
+                    </div>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="validationTooltip01" pattern="[0-9]+" required>
+                    <label for="validationTooltip01 floatingInput">Número</label>
+                    <div class="invalid-feedback">
+                      Ingrese Número
+                    </div>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="validationTooltip01" maxlength="40" required>
+                    <label for="validationTooltip01 floatingInput">Estado</label>
+                    <div class="invalid-feedback">
+                      Ingrese Estado
+                    </div>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="validationTooltip01" maxlength="40" required>
+                    <label for="validationTooltip01 floatingInput">Colonia</label>
+                    <div class="invalid-feedback">
+                      Ingrese Colonia
+                    </div>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="validationTooltip01" pattern="[0-9]{6}" required>
+                    <label for="validationTooltip01 floatingInput">Codigo Postal</label>
+                    <div class="invalid-feedback">
+                      Ingrese Código Postal
+                    </div>
+                  </div>
+                  <br>
+                  <button type="submit" class="button-30" role="button">Submit</button>
+                </form>
+              </div>
         </div></div></div>
       </div>
       </div>
     </div>  
-    <br><br> <br><br>    
+    <br><br> <br><br>    <br><br><br>
  </div>
  <div class="fondo3" id="sec3">
   <br><br> <br><br> <br><br><br><br> 
@@ -131,7 +202,7 @@
         </div>
       </div>
       <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
-        <div class="card">
+        <div class="card" style="height: 1000px;">
           <div class="circles"> 
             <div class="c"></div>
             <div class="c"></div>
@@ -156,8 +227,90 @@
               <div class="bucar" >
                 registroventa.io
               </div>
-            <div class="letras" style="font-size:medium;">
-              DATOS DE LA VENTA  
+            <div class="letras" style="font-size:medium;margin-top: 300%">
+              <h4>INGRESE VENTA</h4>
+              <br>
+
+              <form class="was-validated">
+
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="validationTooltip01" value="VENT-" pattern="VENT-[0-9]{3}"required>
+                  <label for="validationTooltip01 floatingInput">ID venta</label>
+                  <div class="invalid-feedback">
+                    Ingrese ID venta
+                  </div>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="date" class="form-control" id="validationTooltip01" required>
+                  <label for="validationTooltip01 floatingInput">Fecha</label>
+                  <div class="invalid-feedback">
+                    Ingrese fecha
+                  </div>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="validationTooltip01" pattern="[A-Z]{2}[0-9]{6}" required>
+                  <label for="validationTooltip01 floatingInput">RFC cliente</label>
+                  <div class="invalid-feedback">
+                    Ingresa un RFC valido
+                  </div>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="validationTooltip01" value="131313" required>
+                  <label for="validationTooltip01 floatingInput">ID sucursal</label>
+                  <div class="invalid-feedback">
+                    Ingresa una sucursal
+                  </div>
+                </div>
+                
+                
+                <div class="md-3">
+                  <select id="id_select2_example" style="width: 200px;" class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Producto</option>
+                    <option data-img_src="../statics/images/articulos/kit.jpg">Kit de regalo</option>
+                    <option data-img_src="../statics/images/articulos/plumas.jpg">Plumas</option>
+                    <option data-img_src="../statics/images/articulos/carpeta.jpg">Carpetas para documentos</option>
+                    <option data-img_src="../statics/images/articulos/cuaderno.jpg">Paquete de dos cuadernos</option>
+                    <option data-img_src="../statics/images/articulos/pegamento.jpg">Pegamento en barra</option>
+                    <option data-img_src="../statics/images/articulos/reloj.jpg">Reloj</option>
+                    <option data-img_src="../statics/images/articulos/ingles.jpg">Lista de vocabularios en inglés</option>
+                    <option data-img_src="../statics/images/articulos/usb.jpg">USB</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Ingresa un producto
+                  </div>
+
+                    <script type="text/javascript">
+                        function custom_template(obj){
+                                var data = $(obj.element).data();
+                                var text = $(obj.element).text();
+                                if(data && data['img_src']){
+                                    img_src = data['img_src'];
+                                    template = $("<img src=\"" + img_src + "\" style=\"width:100%;height:150px;\"/>");
+                                    return template;
+                                }
+                            }
+                        var options = {
+                            'templateSelection': custom_template,
+                            'templateResult': custom_template,
+                        }
+                        $('#id_select2_example').select2(options);
+                        $('.select2-container--default .select2-selection--single').css({'height': '220px'});
+                    </script>
+                </div>
+
+                <br>
+                <div class="form-floating mb-3">
+                  <input type="integer" class="form-control" id="validationTooltip01" pattern="[0-9]+" required>
+                  <label for="validationTooltip01 floatingInput">Número de articulos</label>
+                  <div class="invalid-feedback">
+                    Ingrese número de articulo
+                  </div>
+                </div>
+                <br>
+
+                <button type="submit" disabled class="button-30" class="btn btn-primary" role="button">Submit</button>
+              
+              </form>
             </div>
         </div>
           </div></div>
